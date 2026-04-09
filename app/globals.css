@@ -30,3 +30,66 @@ body {
     transform: translateY(0);
   }
 }
+
+/* MAIN CALENDAR */
+.react-calendar {
+  width: 100%;
+  max-width: 320px;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+  font-family: inherit;
+  color: #111827;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* NAVIGATION (month + arrows) */
+.react-calendar__navigation button {
+  color: #111827;
+  font-weight: 600;
+  min-width: 44px;
+  background: none;
+}
+
+/* WEEK DAYS */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* DAYS */
+.react-calendar__tile {
+  color: #111827;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.react-calendar__tile:hover {
+  background: #f3f4f6;
+}
+
+/* TODAY */
+.react-calendar__tile--now {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* SELECTED DATE */
+.react-calendar__tile--active {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+/* WEEKENDS (red styling like your UI) */
+.react-calendar__month-view__days__day--weekend {
+  color: #dc2626;
+}
+
+/* DISABLED / OTHER MONTH */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #9ca3af;
+}
