@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Calendar Task App
 
-## Getting Started
+This is a simple calendar-based task management app built using Next.js and tailwind css.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Interactive calendar (using react-calendar,npm i react-calendar)
+* Add tasks for the current day
+* Maximum 2 tasks per day
+* Edit,and  delete tasks as completed
+* Tasks are stored in localStorage (no backend added)
+* Clean UI with a card-based layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* Next.js (App Router)
+* React
+* Tailwind CSS
+* react-calendar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Why these choices?
 
-## Learn More
+* **Next.js**: Easy setup and good structure for scalable apps
+* **Tailwind CSS**: Fast styling and clean UI
+* **react-calendar**: Lightweight and customizable calendar component
+* **localStorage**: Keeps it simple without needing a database
 
-To learn more about Next.js, take a look at the following resources:
+## How to run locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/your-usernamefrontend_challenge.git
+   ```
 
-## Deploy on Vercel
+2. Navigate into the project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd frontend_challenge
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open in browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Notes
+
+* Tasks can only be added for the current day
+* Data is stored in browser storage, so it will reset if cleared
+
+
+
+---
